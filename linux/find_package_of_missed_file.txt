@@ -1,0 +1,13 @@
+#to find which package conatain a missed file , example which packege have to installed that have pcre.h file
+
+$apt-get install apt-file
+$apt-file update
+$apt-file search -x "/pcre.h$"
+
+#packages list:
+#    kannel-dev: /usr/include/kannel/gwlib/pcre.h
+#    libajax6-dev: /usr/include/ajax/pcre.h
+#    libpcre3-dev: /usr/include/pcre.h
+
+#now install which one needed
+#	$apt-get install libpcre3-dev
