@@ -1,0 +1,8 @@
+nano /etc/ldap/ldap.conf
+
+# modify in conf file
+BASE    dc=oslearn,dc=ir 
+URI     ldap://109.100.23.1 ldap://109.100.23.1:666
+
+#run to 
+sudo dpkg-reconfigure slapd

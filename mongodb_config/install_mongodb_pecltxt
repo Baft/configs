@@ -1,0 +1,10 @@
+
+
+#to install phize
+apt-get install php5_dev
+
+#to install pcre lib
+apt-get install libpcre3-dev
+
+#to install mongodb pecl
+pecl install mongodb
