@@ -1,0 +1,118 @@
+#!
+
+#need java 1.8 (v8) or higher
+#to install java v8
+#sudo add-apt-repository ppa:openjdk-r/ppa
+#sudo apt-get update
+#sudo apt-get install openjdk-8-jdk
+#make v8 your default java version by :
+#sudo update-alternatives --config java
+
+######################################################## start (without install) 
+#start on port 8655 (default is 8983) in locaclhot , server instanses (if multiple instances run) use 'server' directory (-d server) and use 'solr' directory for this instance(-s solr) with 512MB memmory for hash table ( -m 512m)
+$ sudo bin/solr start -h localhost -p 8655 -d server -s solr -m 512m
+
+#change configuration . all configuratin in solrconfig.xml can change in command by this structure . those that have structure like ${solr.autoSoftCommit.maxTime:-1} , can use .
+$ bin/solr start -Dsolr.autoSoftCommit.maxTime=10000
+
+######################################################## install as a OS service .
+#install script do these :
+	#install to /opt/solr by -i option (default id /opt/solr[version number]) 
+	#create symlink in same location (installation parent path "/opt" ) , point to the installation directory ( point to "/opt/solr[version num]") . use this symlink around the app insted of installation dir , to ease upgrading process without changeing pathes
+	#save data & configuration & logs & PID files of instances to /opt/solrData by -d option (default id /var/solr/data) 
+	#create instance with name 'SSE' by -s option (default is solr) and listen to port 8099 by -p option (default is 8983)
+	#create "/etc/default/[name of solr instance].in.sh" file for environment variable for instance each instance 
+	#create "etc/init.d/[solr instance name]" file to create service in OS . read "/etc/default/[name of solr instance].in.sh" file
+$ sudo tar xzf solr-X.Y.Z.tgz
+$ sudo bin/install_solr_service.sh /home/webersion/Desktop/solr-6.0.0.tgz  -i /opt/solr -d /home/webersion/Desktop/solrData -s SSE -p 8099
+
+
+#to make core instanc
+$ sudo cp bin/init.d/solr /etc/init.d/solr ()
+$ sudo chmod 755 /etc/init.d/solr
+$ sudo chown root:root /etc/init.d/solr
+$ sudo update-rc.d solr defaults
+$ sudo update-rc.d solr enable	
+
+
+#to make a core by url orders (if core exist , old core unloaded)
+http://localhost:8983/solr/admin/cores?action=CREATE&name=coreX&instanceDir=path/to/dir&config=config_file_name.xml&dataDir=data
+OR
+http://localhost:8983/solr/admin/cores?action=CREATE&name=coreX&instanceDir=path/to/instance&configSet=configset2
+#configset is shared set of configuration https://cwiki.apache.org/confluence/display/solr/Config+Sets
+#https://cwiki.apache.org/confluence/display/solr/CoreAdmin+API#CoreAdminAPI-CREATE
+
+#to reload core : http://localhost:8983/solr/admin/cores?action=RELOAD&core=core0
+
+#to manage core by url , need this structure
+http://[web address]/solr/#/[core name]/[order / command ... ]
+
+
+####################################################### config instances
+#override instance configuration by env varibales in "/etc/default/[name of solr instance].in.sh"
+#this file called by /etc/init.d/[instance name] to configure solr instance before run [installDir]/servers/start.jar
+
+	#where PID file is
+SOLR_PID_DIR=/var/solr
+	#waher instance file is
+SOLR_HOME=/var/solr/data
+	#where save log files
+SOLR_LOGS_DIR=/var/solr/logs
+	#solr run as this user
+RUNAS=solr
+	#size of instance heap size
+SOLR_JAVA_MEM="-Xms512m -Xmx512m"
+
+####################################################### config files
+ 
+	##### solr.xml
+
+		#In standalone mode, solr.xml must reside in solr_home (defined by -d option). In SolrCloud mode, solr.xml will be loaded from Zookeeper if it exists, with fallback to 
+
+		#for solr.xml complete list https://cwiki.apache.org/confluence/display/solr/Format+of+solr.xml
+		<solr>
+		 
+		  <solrcloud>
+		    <str name="host">${host:}</str>
+		    <int name="hostPort">${jetty.port:8983}</int>
+		    <str name="hostContext">${hostContext:solr}</str>
+		    <int name="zkClientTimeout">${zkClientTimeout:15000}</int>
+		    <bool name="genericCoreNodeNames">${genericCoreNodeNames:true}</bool>
+		  </solrcloud>
+		 
+		  <shardHandlerFactory name="shardHandlerFactory"
+		    class="HttpShardHandlerFactory">
+		    <int name="socketTimeout">${socketTimeout:0}</int>
+		    <int name="connTimeout">${connTimeout:0}</int>
+		  </shardHandlerFactory>
+		 
+		</solr>
+
+	##### schema.xml
+
+	#define fileds and feilds type
+	#reside in solr_home (or for each instace(core) reside in core home dir , ususlay is /var/solr/data/[core name]/schema.xml)
+
+
+####################################################### solrconfig.xml files
+#for solrdonfig.xml https://cwiki.apache.org/confluence/display/solr/Configuring+solrconfig.xml
+#reside in conf/ directory of each collection ( core(instance) in standalone Solr mode )
+
+	#### add plugins . like dataImporter ,. ..
+	#https://wiki.apache.org/solr/SolrPlugins#How_to_Load_Plugins
+
+###################################################### schema config
+#this config define fields and fields type to be indexed
+# "managed-schema" is the name for the schema file Solr uses by default in "[solr instance name]/conf" folder.
+#or put schema.xml in  "[solr instance name]" folder and solr make that automatically in conf folder and remove this.
+
+#if u need to specify alternative shema file , have to change in solrconfig.xml as link below
+#https://cwiki.apache.org/confluence/display/solr/Schema+Factory+Definition+in+SolrConfig
+
+###################################################### maintenance
+#maintenance
+$ sudo bin/solr status
+$ sudo bin/solr healthcheck -help
+
+#to view status of an instance(core)
+http://localhost:8099/solr/admin/cores?action=STATUS&core=namesearch
