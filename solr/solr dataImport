@@ -1,0 +1,71 @@
+#to connect to DB 
+#https://cwiki.apache.org/confluence/display/solr/Uploading+Structured+Data+Store+Data+with+the+Data+Import+Handler#UploadingStructuredDataStoreDatawiththeDataImportHandler-DataImportHandlerCommands
+
+################ 1 : add to solrconfig
+
+#define a requestHandler element in solrconfig.xml  to define "data import config" file
+#by adding this to conf file
+
+<requestHandler name="/dataimport" class="org.apache.solr.handler.dataimport.DataImportHandler">
+    <lst name="defaults">
+      <str name="config">/var/solr/data/namesearch-dataconfig.xml</str>
+    </lst>
+ </requestHandler>
+
+ # then an url like : http://solrAddress/solr/dataimport  can called from browser
+ # if class dose not found , you have to define it on solrconfig.xml as plugin . see add plugin :
+ #https://wiki.apache.org/solr/SolrPlugins#How_to_Load_Plugins
+
+################ 2 : define dataConfig
+
+#define data config file  with same name defined in solrconfig.xml > requestHandler > str name=config 
+#https://wiki.apache.org/solr/DataImportHandler#Using_delta-import_command
+
+#clear comments (remove html comments from file) 
+
+	## trasforming
+	#if you need some special trasformation on data before indexed , have to code this
+	#https://wiki.apache.org/solr/DataImportHandler#Extending_the_tool_with_APIs
+
+	#add like this in dataConfig.xml
+	<dataConfig>
+        <script language="Javascript" ><![CDATA[
+                function CategoryPieces(row)    {
+
+                	//row is java map object . http://java.sun.com/javase/6/docs/api/java/util/Map.html
+                	//To add multiple entries for a single field use var arr = new java.util.ArrayList(), you can't use a JavaScript array
+
+
+                    var pieces = row.get('category').split('/');
+                    var arr = new java.util.ArrayList();
+                    for (var i=0; i<pieces.length; i++) {
+                       arr.add(pieces[i]);
+                    }
+                    row.put('categorypieces', arr);
+                    row.remove('category');
+                    return row;
+                }
+        ]]></script>
+        <document>
+                <entity name="e" pk="id" transformer="script:CategoryPieces" query="select * from X">
+                ....
+                </entity>
+        </document>
+	</dataConfig>
+
+
+	#for complex data config and document indexing
+	#https://wiki.apache.org/solr/DataImportHandler#Architecture
+
+	
+
+################3 : execute import/update data
+
+# importing data to be indexed
+#http://<host>:<port>/ solr/ <collection_name>/ dataimport? command=[abort | delta-import | full-import | reload-config | status | show-config ]
+
+#for more option and detail
+#https://cwiki.apache.org/confluence/display/solr/Uploading+Structured+Data+Store+Data+with+the+Data+Import+Handler
+
+
+################4 : query data
