@@ -1,0 +1,12 @@
+#https://sites.google.com/site/openldaptutorial/Home/openldap---beginners/what-is-objectclass
+#https://www.skills-1st.co.uk/papers/ldap-schema-design-feb-2005/ldap-schema-design-feb-2005.html
+#http://www.zytrax.com/books/ldap/ch3/
+
+(DIT)
+An LDAP Directory stores information in a tree structure known as the Directory Information Tree (DIT)
+
+(RDN)
+Each node in the DIT has a name called the Relative Distinguished Name (RDN) which is unique among the peer nodes under its parent
+
+(DN)
+ It also has a globally-unique name called the Distinguished Name (DN) made up from the name of the node itself plus the names of all its superior nodes up to the root of the DIT
