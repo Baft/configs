@@ -1,0 +1,27 @@
+#to manage disk partition mounting
+#1- find partions info by : 
+df -T
+
+#also partitions find in place :
+/dev/sdXX  <- XX can be 'a5' like sda5 or sdb2
+or
+/dev/disk/**
+
+#2- install ntfs configuration management to be able manage permissions on ntfs
+sudo apt-get install ntfs-config 
+ghsu ntfs-config
+#so ntfs-3g available in filesystem types
+
+#2- can edit/save mount options in file:
+/etc/fstab  <- text file
+#add text line like :
+UUID=0AD22036D2202881 /media/web/0AD22036D2202881 ntfs-3g defaults,nosuid,nodev,locale=en_US.UTF-8,rw,auto,user,umask=0000,uid=web,gid=web,x-gvfs-show 0 0
+
+umask=0000 <- setting permission on disk for all users (0000 for all permissions ) , if this set no need to set fmask and dmask
+fmask=0000 <- file persmission on disk
+dmask=0000 <- directory permissin on disk
+uid=web,gid=web <- for owner user and groub
+rw <- to enable read/write (ro for read only)
+ntfs-3g <- filesystem type
+UUID=xxxx <- partition uuid find in step one
+/media/web/0AD22036D2202881 <- mount point (place to mount partition on it)

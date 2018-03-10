@@ -15,6 +15,14 @@
  # then an url like : http://solrAddress/solr/dataimport  can called from browser
  # if class dose not found , you have to define it on solrconfig.xml as plugin . see add plugin :
  #https://wiki.apache.org/solr/SolrPlugins#How_to_Load_Plugins
+ #https://gist.github.com/maxivak/3e3ee1fca32f3949f052
+
+ <lib path="${solr.install.dir:}/dist/solr-dataimporthandler-6.0.0.jar" /> 
+ <lib path="${solr.install.dir:}/dist/solr-dataimporthandler-extras-6.0.0.jar" /> 
+ <lib path="${solr.install.dir:}/contrib/dataimporthandler/lib/mysql-connector-java-5.1.39-bin.jar" /> 
+ or
+ <lib dir="${solr.install.dir:}/contrib/dataimporthandler/lib" regex=".*\.jar" />
+ <lib dir="${solr.install.dir:}/dist/" regex="solr-dataimporthandler-.*\.jar" />
 
 ################ 2 : define dataConfig
 
@@ -23,17 +31,20 @@
 
 #clear comments (remove html comments from file) 
 
-	## trasforming
-	#if you need some special trasformation on data before indexed , have to code this
-	#https://wiki.apache.org/solr/DataImportHandler#Extending_the_tool_with_APIs
+    ## define data source
+    <dataSource type="JdbcDataSource" name="ds1" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://192.168.245.1/insp_v2?useUnicode=true&amp;characterEncoding=UTF-8" user="remote-users" password="root" encoding="UTF-8" useUnicode="true" characterEncoding="UTF-8"/>
 
-	#add like this in dataConfig.xml
-	<dataConfig>
+    ## trasforming
+    #if you need some special trasformation on data before indexed , have to code this
+    #https://wiki.apache.org/solr/DataImportHandler#Extending_the_tool_with_APIs
+
+    #add like this in dataConfig.xml
+    <dataConfig>
         <script language="Javascript" ><![CDATA[
                 function CategoryPieces(row)    {
 
-                	//row is java map object . http://java.sun.com/javase/6/docs/api/java/util/Map.html
-                	//To add multiple entries for a single field use var arr = new java.util.ArrayList(), you can't use a JavaScript array
+                    //row is java map object . http://java.sun.com/javase/6/docs/api/java/util/Map.html
+                    //To add multiple entries for a single field use var arr = new java.util.ArrayList(), you can't use a JavaScript array
 
 
                     var pieces = row.get('category').split('/');
@@ -51,13 +62,13 @@
                 ....
                 </entity>
         </document>
-	</dataConfig>
+    </dataConfig>
 
 
-	#for complex data config and document indexing
-	#https://wiki.apache.org/solr/DataImportHandler#Architecture
+    #for complex data config and document indexing
+    #https://wiki.apache.org/solr/DataImportHandler#Architecture
 
-	
+
 
 ################3 : execute import/update data
 
@@ -69,3 +80,11 @@
 
 
 ################4 : query data
+
+
+
+###################################################### enable Dictionary
+https://wiki.apache.org/solr/HunspellStemFilterFactory
+
+#add this to schema.xml or "managed-schema" file in core (/var/solr/data/[core name]/conf)
+<filter class="solr.HunspellStemFilterFactory" dictionary="en_GB.dic" affix="en_GB.aff" ignoreCase="true" />

@@ -1,0 +1,598 @@
+2016-11-14 11:26:27.170 INFO  (main) [   ] o.e.j.u.log Logging initialized @410ms
+2016-11-14 11:26:27.397 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2016-11-14 11:26:27.420 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///opt/solr-6.2.1/server/contexts/] at interval 0
+2016-11-14 11:26:27.751 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-11-14 11:26:27.758 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@5f9d02cb{/solr,file:///opt/solr-6.2.1/server/solr-webapp/webapp/,STARTING}{/opt/solr-6.2.1/server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-11-14 11:26:27.771 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=1335298403@4f970963
+2016-11-14 11:26:27.787 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-11-14 11:26:27.787 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /var/solr/data
+2016-11-14 11:26:27.788 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/var/solr/data'
+2016-11-14 11:26:27.788 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-11-14 11:26:27.788 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /var/solr/data
+2016-11-14 11:26:27.792 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /var/solr/data/solr.xml
+2016-11-14 11:26:27.866 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /var/solr/data
+2016-11-14 11:26:27.891 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1074593562
+2016-11-14 11:26:27.891 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/var/solr/data]
+2016-11-14 11:26:27.892 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/var/solr/data/lib/dataimporthandler-extras/' to classloader
+2016-11-14 11:26:27.892 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/var/solr/data/lib/dataimporthandler/' to classloader
+2016-11-14 11:26:28.055 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,connectionsEvictorSleepDelay : 5000,maxConnectionIdleTime : 40000,
+2016-11-14 11:26:28.275 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-11-14 11:26:28.287 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-11-14 11:26:28.287 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-11-14 11:26:28.294 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-11-14 11:26:28.294 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-11-14 11:26:28.382 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /var/solr/data
+2016-11-14 11:26:28.386 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=namesearch, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data}
+2016-11-14 11:26:28.386 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core namesearch in /var/solr/data/namesearch
+2016-11-14 11:26:28.386 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions
+2016-11-14 11:26:28.416 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/var/solr/data/namesearch'
+2016-11-14 11:26:28.417 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-11-14 11:26:28.417 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /var/solr/data
+2016-11-14 11:26:28.418 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/var/solr/data/namesearch/lib/hsqldb-1.8.0.10.jar' to classloader
+2016-11-14 11:26:28.418 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/var/solr/data/namesearch/lib/derby-10.9.1.0.jar' to classloader
+2016-11-14 11:26:28.423 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/opt/solr-6.2.1/server
+2016-11-14 11:26:28.423 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-11-14 11:26:28.489 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@5f9d02cb{/solr,file:///opt/solr-6.2.1/server/solr-webapp/webapp/,AVAILABLE}{/opt/solr-6.2.1/server/solr-webapp/webapp}
+2016-11-14 11:26:28.530 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@21c29f36{HTTP/1.1,[http/1.1]}{0.0.0.0:8099}
+2016-11-14 11:26:28.530 INFO  (main) [   ] o.e.j.s.Server Started @1772ms
+2016-11-14 11:26:28.550 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-11-14 11:26:28.568 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-11-14 11:26:28.581 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/poi-ooxml-schemas-3.15-beta1.jar' to classloader
+2016-11-14 11:26:28.581 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-11-14 11:26:28.581 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-11-14 11:26:28.581 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/fontbox-2.0.1.jar' to classloader
+2016-11-14 11:26:28.581 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-11-14 11:26:28.581 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-11-14 11:26:28.581 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tika-xmp-1.13.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/poi-ooxml-3.15-beta1.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tika-parsers-1.13.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tika-core-1.13.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/jackcess-2.1.3.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/poi-3.15-beta1.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/pdfbox-2.0.1.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/metadata-extractor-2.8.1.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/jempbox-1.8.12.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/isoparser-1.1.18.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/vorbis-java-tika-0.8.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/pdfbox-tools-2.0.1.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-11-14 11:26:28.582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/vorbis-java-core-0.8.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/icu4j-56.1.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/commons-compress-1.11.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/poi-scratchpad-3.15-beta1.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tika-java7-1.13.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-cell-6.2.1.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/carrot2-mini-3.12.0.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/attributes-binder-1.3.1.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-clustering-6.2.1.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-langid-6.2.1.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-velocity-6.2.1.jar' to classloader
+2016-11-14 11:26:28.583 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/dataimporthandler/lib/mysql-connector-java-5.1.39-bin.jar' to classloader
+2016-11-14 11:26:28.584 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-dataimporthandler-6.2.1.jar' to classloader
+2016-11-14 11:26:28.584 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-dataimporthandler-extras-6.2.1.jar' to classloader
+2016-11-14 11:26:28.629 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.0.0
+2016-11-14 11:26:28.741 INFO  (qtp1983747920-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122725949&since=0} status=0 QTime=62
+2016-11-14 11:26:28.772 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-11-14 11:26:28.840 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [namesearch] Schema name=example-DIH-db
+2016-11-14 11:26:29.173 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-11-14 11:26:29.219 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-11-14 11:26:29.231 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-11-14 11:26:29.252 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/var/solr/data/namesearch'
+2016-11-14 11:26:29.252 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'namesearch' using configuration from instancedir /var/solr/data/namesearch
+2016-11-14 11:26:29.253 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-11-14 11:26:29.260 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrCore [[namesearch] ] Opening new SolrCore at [/var/solr/data/namesearch], dataDir=[/var/solr/data/namesearch/data/]
+2016-11-14 11:26:29.261 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-11-14 11:26:29.263 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrCore [[namesearch] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-11-14 11:26:29.263 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrCore [[namesearch] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-11-14 11:26:29.273 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory return new directory for /var/solr/data/namesearch/data/snapshot_metadata
+2016-11-14 11:26:29.274 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.s.SolrSnapshotMetaDataManager Loading from snapshot metadata file...
+2016-11-14 11:26:29.276 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-11-14 11:26:29.276 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory return new directory for /var/solr/data/namesearch/data
+2016-11-14 11:26:29.277 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrCore New index directory detected: old=null new=/var/solr/data/namesearch/data/index/
+2016-11-14 11:26:29.277 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory return new directory for /var/solr/data/namesearch/data/index
+2016-11-14 11:26:29.298 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-11-14 11:26:29.298 INFO  (OldIndexDirectoryCleanupThreadForCore-namesearch) [   x:namesearch] o.a.s.c.SolrCore Looking for old index directories to cleanup for core namesearch in /var/solr/data/namesearch/data/
+2016-11-14 11:26:29.307 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-11-14 11:26:29.369 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-11-14 11:26:29.451 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-11-14 11:26:29.464 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-11-14 11:26:29.466 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-11-14 11:26:29.466 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-11-14 11:26:29.466 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-11-14 11:26:29.546 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-11-14 11:26:29.550 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-11-14 11:26:29.550 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-11-14 11:26:29.551 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-11-14 11:26:29.552 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-11-14 11:26:29.552 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-11-14 11:26:29.552 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-11-14 11:26:29.552 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/sql,/graph,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/stream,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/terms,/debug/dump,/dataimport,/update/extract
+2016-11-14 11:26:29.552 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-11-14 11:26:29.592 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-11-14 11:26:29.592 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-11-14 11:26:29.634 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-11-14 11:26:29.634 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-11-14 11:26:29.693 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/var/solr/data/namesearch/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@64e2ec1f; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_x,generation=33}
+2016-11-14 11:26:29.693 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrDeletionPolicy newest commit generation = 33
+2016-11-14 11:26:29.725 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@244d3430[namesearch] main]
+2016-11-14 11:26:29.731 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/namesearch/conf
+2016-11-14 11:26:29.731 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/var/solr/data/namesearch/conf}
+2016-11-14 11:26:29.736 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/var/solr/data/namesearch/conf
+2016-11-14 11:26:29.736 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-11-14 11:26:29.740 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-11-14 11:26:29.744 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-11-14 11:26:29.744 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-11-14 11:26:29.745 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from data dir: elevate.xml
+2016-11-14 11:26:29.754 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-11-14 11:26:29.764 INFO  (searcherExecutor-7-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@244d3430[namesearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_q(6.2.1):C8298)))}
+2016-11-14 11:26:29.764 INFO  (searcherExecutor-7-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-11-14 11:26:29.764 INFO  (searcherExecutor-7-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-11-14 11:26:29.764 INFO  (searcherExecutor-7-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.SolrCore [namesearch] Registered new searcher Searcher@244d3430[namesearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_q(6.2.1):C8298)))}
+2016-11-14 11:26:29.765 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-11-14 11:26:29.765 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-11-14 11:26:29.771 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.VersionInfo Found MAX value 1550972586305781761 from Terms for _version_ in index
+2016-11-14 11:26:29.773 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.UpdateLog Took 8.0ms to seed version buckets with highest version 1550972586305781761
+2016-11-14 11:26:29.774 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.CoreContainer registering core: namesearch
+2016-11-14 11:26:35.973 INFO  (qtp1983747920-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122725949&since=0} status=0 QTime=0
+2016-11-14 11:26:45.981 INFO  (qtp1983747920-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122725949&since=0} status=0 QTime=0
+2016-11-14 11:26:55.995 INFO  (qtp1983747920-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122725949&since=0} status=0 QTime=0
+2016-11-14 11:27:05.992 INFO  (qtp1983747920-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122725949&since=0} status=0 QTime=0
+2016-11-14 11:27:11.338 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.h.d.DataImporter Loading DIH Configuration: /var/solr/data/namesearch/dataConfig.xml
+2016-11-14 11:27:11.351 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-11-14 11:27:11.351 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-11-14 11:27:11.351 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-11-14 11:27:11.361 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={core=namesearch&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=brboss&_=1479122042069&verbose=false} status=0 QTime=27
+2016-11-14 11:27:11.366 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.DataImporter Starting Full Import
+2016-11-14 11:27:11.372 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:27:11.383 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-11-14 11:27:11.559 INFO  (Thread-14) [   x:namesearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@6904dc48[namesearch] realtime]
+2016-11-14 11:27:11.596 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.JdbcDataSource Creating a connection for entity brboss with URL: jdbc:mysql://192.168.245.1/insp_v2?useUnicode=true&characterEncoding=UTF-8
+2016-11-14 11:27:11.833 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 236
+2016-11-14 11:27:12.436 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.DocBuilder Import completed successfully
+2016-11-14 11:27:12.437 INFO  (Thread-14) [   x:namesearch] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-11-14 11:27:12.437 INFO  (Thread-14) [   x:namesearch] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@23327de5
+2016-11-14 11:27:12.665 INFO  (Thread-14) [   x:namesearch] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/var/solr/data/namesearch/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@64e2ec1f; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_x,generation=33}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/var/solr/data/namesearch/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@64e2ec1f; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_y,generation=34}
+2016-11-14 11:27:12.665 INFO  (Thread-14) [   x:namesearch] o.a.s.c.SolrDeletionPolicy newest commit generation = 34
+2016-11-14 11:27:12.668 INFO  (Thread-14) [   x:namesearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@36126f2b[namesearch] main]
+2016-11-14 11:27:12.671 INFO  (searcherExecutor-7-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@36126f2b[namesearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_r(6.2.1):C8299)))}
+2016-11-14 11:27:12.671 INFO  (searcherExecutor-7-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-11-14 11:27:12.671 INFO  (Thread-14) [   x:namesearch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-11-14 11:27:12.671 INFO  (searcherExecutor-7-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.SolrCore [namesearch] Registered new searcher Searcher@36126f2b[namesearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_r(6.2.1):C8299)))}
+2016-11-14 11:27:12.673 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-11-14 11:27:12.674 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2016-11-14 11:27:12.674 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.DocBuilder Time taken = 0:0:1.291
+2016-11-14 11:27:12.676 INFO  (Thread-14) [   x:namesearch] o.a.s.u.p.LogUpdateProcessorFactory [namesearch]  webapp=/solr path=/dataimport params={core=namesearch&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=brboss&_=1479122042069&verbose=false} status=0 QTime=27{deleteByQuery=*:* (-1550972702089543680),add=[1 (1550972702524702720), 2 (1550972702545674240), 3 (1550972702545674241), 4 (1550972702546722816), 5 (1550972702546722817), 6 (1550972702547771392), 7 (1550972702547771393), 8 (1550972702547771394), 9 (1550972702548819968), 10 (1550972702548819969), ... (8299 adds)],commit=} 0 1342
+2016-11-14 11:27:13.493 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:27:14.453 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:27:16.001 INFO  (qtp1983747920-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122725949&since=0} status=0 QTime=0
+2016-11-14 11:27:17.421 INFO  (qtp1983747920-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479122837219} status=0 QTime=0
+2016-11-14 11:27:17.435 INFO  (qtp1983747920-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:27:17.479 INFO  (qtp1983747920-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479122837219} status=0 QTime=48
+2016-11-14 11:27:24.226 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/luke params={fl=name&wt=json&_=1479122052550} status=0 QTime=7
+2016-11-14 11:27:27.423 INFO  (qtp1983747920-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:27:28.267 INFO  (qtp1983747920-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479122052268} status=0 QTime=0
+2016-11-14 11:27:28.276 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1479122052550} status=0 QTime=3
+2016-11-14 11:27:28.283 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/config params={wt=json&_=1479122052551} status=0 QTime=9
+2016-11-14 11:27:28.316 INFO  (qtp1983747920-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479122052269} status=0 QTime=45
+2016-11-14 11:27:28.432 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1479122052550} status=0 QTime=5
+2016-11-14 11:27:28.474 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/luke params={fl=lang_id&wt=json&_=1479122052550} status=0 QTime=0
+2016-11-14 11:27:30.275 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/luke params={fl=lang_id&wt=json&_=1479122052550} status=0 QTime=0
+2016-11-14 11:27:31.335 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/luke params={fl=lang_id&wt=json&_=1479122052550} status=0 QTime=0
+2016-11-14 11:27:37.431 INFO  (qtp1983747920-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:27:39.651 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={q={!term+f%3Dcms_body}div&indent=on&wt=json&_=1479121493148} hits=0 status=0 QTime=8
+2016-11-14 11:27:42.102 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={q={!term+f%3Dcms_body}div&indent=on&wt=json&_=1479121493148} hits=0 status=0 QTime=2
+2016-11-14 11:27:45.350 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /spell,class = solr.SearchHandler,args = {defaults={spellcheck.dictionary=default,spellcheck=on,spellcheck.extendedResults=true,spellcheck.count=10,spellcheck.alternativeTermCount=5,spellcheck.maxResultsForSuggest=5,spellcheck.collate=true,spellcheck.collateExtendedResults=true,spellcheck.maxCollationTries=10,spellcheck.maxCollations=5,df=_text_},last-components=[spellcheck]}} 
+2016-11-14 11:27:45.397 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدي+نژاد"&defType=edismax&spellcheck.q=یث&indent=on&qf=name_family_spellcheck&spellcheck=on&wt=json&_=1479120480513} hits=1 status=0 QTime=47
+2016-11-14 11:27:47.443 INFO  (qtp1983747920-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:27:57.447 INFO  (qtp1983747920-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:28:03.884 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدي+نژاد"&defType=edismax&spellcheck.q=یث&indent=on&qf=name_family_spellcheck&spellcheck=on&fl=lang_id&wt=json&_=1479120480513} hits=1 status=0 QTime=1
+2016-11-14 11:28:07.443 INFO  (qtp1983747920-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:28:09.256 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدي+نژاد"&defType=edismax&spellcheck.q=یث&indent=on&qf=name_family_spellcheck&spellcheck=on&fl=lang_id,name&wt=json&_=1479120480513} hits=1 status=0 QTime=0
+2016-11-14 11:28:17.444 INFO  (qtp1983747920-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:28:18.257 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدي+نژاد"&defType=edismax&spellcheck.q=یث&indent=on&qf=name_family_spellcheck&spellcheck=on&fl=lang_id,name_family&wt=json&_=1479120480513} hits=1 status=0 QTime=0
+2016-11-14 11:28:23.764 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدي+نژاد"&defType=edismax&spellcheck.q=یث&indent=on&qf=name_family_spellcheck&spellcheck=on&fl=lang_id,name_family,brcode&wt=json&_=1479120480513} hits=1 status=0 QTime=0
+2016-11-14 11:28:27.458 INFO  (qtp1983747920-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:28:35.823 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدي+نژاد"&defType=edismax&spellcheck.q=یث&indent=on&qf=name_family&spellcheck=on&fl=lang_id,name_family,brcode&wt=json&_=1479120480513} hits=1 status=0 QTime=0
+2016-11-14 11:28:36.395 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدي+نژاد"&defType=edismax&spellcheck.q=یث&indent=on&qf=name_family&spellcheck=on&fl=lang_id,name_family,brcode&wt=json&_=1479120480513} hits=1 status=0 QTime=0
+2016-11-14 11:28:37.471 INFO  (qtp1983747920-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:28:47.478 INFO  (qtp1983747920-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:28:57.474 INFO  (qtp1983747920-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:29:07.477 INFO  (qtp1983747920-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:29:10.271 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدی+نژاد"&defType=edismax&indent=on&qf=name_family&spellcheck=on&fl=lang_id,name_family,brcode&wt=json&_=1479120480513} hits=1 status=0 QTime=4
+2016-11-14 11:29:17.486 INFO  (qtp1983747920-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:29:26.975 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدی+نژاد"&spellcheck.q=اميدی+نژاد&indent=on&spellcheck=on&fl=lang_id,name_family,brcode&wt=json&_=1479120480513} hits=1 status=0 QTime=2
+2016-11-14 11:29:27.482 INFO  (qtp1983747920-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:29:28.272 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدی+نژاد"&spellcheck.q=اميدی+نژاد&indent=on&spellcheck=on&fl=lang_id,name_family,brcode&wt=json&_=1479120480513} hits=1 status=0 QTime=0
+2016-11-14 11:29:33.297 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدی+نژاد"&spellcheck.q=اميدینژاد&indent=on&spellcheck=on&fl=lang_id,name_family,brcode&wt=json&_=1479120480513} hits=1 status=0 QTime=0
+2016-11-14 11:29:37.490 INFO  (qtp1983747920-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:29:47.484 INFO  (qtp1983747920-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:29:57.491 INFO  (qtp1983747920-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:30:00.876 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=cms_body:"اميدی+نژاد"&spellcheck.q=اميدینژاد&indent=on&spellcheck=on&fl=lang_id,name_family,brcode&wt=json&_=1479120480513} hits=0 status=0 QTime=0
+2016-11-14 11:30:07.499 INFO  (qtp1983747920-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:30:13.083 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=cms_body:title&spellcheck.q=اميدینژاد&indent=on&spellcheck=on&fl=lang_id,name_family,brcode&wt=json&_=1479120480513} hits=0 status=0 QTime=1
+2016-11-14 11:30:17.498 INFO  (qtp1983747920-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:30:20.280 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.h.d.DataImporter Loading DIH Configuration: /var/solr/data/namesearch/dataConfig.xml
+2016-11-14 11:30:20.281 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-11-14 11:30:20.286 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-11-14 11:30:20.286 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-11-14 11:30:20.286 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={core=namesearch&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=titles&_=1479122042069&verbose=false} status=0 QTime=6
+2016-11-14 11:30:20.286 INFO  (Thread-15) [   x:namesearch] o.a.s.h.d.DataImporter Starting Full Import
+2016-11-14 11:30:20.289 INFO  (Thread-15) [   x:namesearch] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-11-14 11:30:20.294 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:20.318 INFO  (Thread-15) [   x:namesearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@5e041945[namesearch] realtime]
+2016-11-14 11:30:20.321 INFO  (Thread-15) [   x:namesearch] o.a.s.h.d.JdbcDataSource Creating a connection for entity titles with URL: jdbc:mysql://192.168.245.1/miras?useUnicode=true&characterEncoding=UTF-8
+2016-11-14 11:30:20.358 INFO  (Thread-15) [   x:namesearch] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 36
+2016-11-14 11:30:20.376 INFO  (Thread-15) [   x:namesearch] o.a.s.h.d.JdbcDataSource Creating a connection for entity docs with URL: jdbc:mysql://192.168.245.1/miras?useUnicode=true&characterEncoding=UTF-8
+2016-11-14 11:30:20.409 INFO  (Thread-15) [   x:namesearch] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 32
+2016-11-14 11:30:23.114 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:24.164 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:24.411 INFO  (Thread-15) [   x:namesearch] o.a.s.h.d.DocBuilder Import completed successfully
+2016-11-14 11:30:24.411 INFO  (Thread-15) [   x:namesearch] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-11-14 11:30:24.411 INFO  (Thread-15) [   x:namesearch] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@23327de5
+2016-11-14 11:30:24.762 INFO  (Thread-15) [   x:namesearch] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/var/solr/data/namesearch/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@64e2ec1f; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_y,generation=34}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/var/solr/data/namesearch/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@64e2ec1f; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_z,generation=35}
+2016-11-14 11:30:24.762 INFO  (Thread-15) [   x:namesearch] o.a.s.c.SolrDeletionPolicy newest commit generation = 35
+2016-11-14 11:30:24.765 INFO  (Thread-15) [   x:namesearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@4306cbd[namesearch] main]
+2016-11-14 11:30:24.765 INFO  (searcherExecutor-7-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4306cbd[namesearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_s(6.2.1):C3317)))}
+2016-11-14 11:30:24.766 INFO  (searcherExecutor-7-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-11-14 11:30:24.768 INFO  (searcherExecutor-7-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.SolrCore [namesearch] Registered new searcher Searcher@4306cbd[namesearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_s(6.2.1):C3317)))}
+2016-11-14 11:30:24.769 INFO  (Thread-15) [   x:namesearch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-11-14 11:30:24.770 INFO  (Thread-15) [   x:namesearch] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-11-14 11:30:24.770 INFO  (Thread-15) [   x:namesearch] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2016-11-14 11:30:24.771 INFO  (Thread-15) [   x:namesearch] o.a.s.h.d.DocBuilder Time taken = 0:0:4.481
+2016-11-14 11:30:24.771 INFO  (Thread-15) [   x:namesearch] o.a.s.u.p.LogUpdateProcessorFactory [namesearch]  webapp=/solr path=/dataimport params={core=namesearch&optimize=false&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&entity=titles&_=1479122042069&verbose=false} status=0 QTime=6{deleteByQuery=*:* (-1550972900123607040),add=[6 (1550972900254679040), 7 (1550972900262019072), 10 (1550972900269359104), 11 (1550972900276699136), 13 (1550972900281942016), 19 (1550972900282990592), 20 (1550972900284039168), 21 (1550972900288233472), 22 (1550972900299767808), 24 (1550972900301864960), ... (3317 adds)],commit=} 0 4491
+2016-11-14 11:30:25.335 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:27.338 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:27.498 INFO  (qtp1983747920-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479122837408&since=0} status=0 QTime=0
+2016-11-14 11:30:27.594 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:28.184 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:29.344 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:31.339 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:32.309 INFO  (qtp1983747920-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479122837219} status=0 QTime=0
+2016-11-14 11:30:32.316 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1479122837219&ts=1479122837219} status=503 QTime=1
+2016-11-14 11:30:32.318 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1479123032292} status=0 QTime=0
+2016-11-14 11:30:32.319 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/replication params={wt=json&command=details&_=1479123032293} status=0 QTime=1
+2016-11-14 11:30:32.332 INFO  (qtp1983747920-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479122837219} status=0 QTime=19
+2016-11-14 11:30:32.335 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/system params={wt=json&_=1479123032292} status=0 QTime=17
+2016-11-14 11:30:33.658 INFO  (qtp1983747920-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479122837219} status=0 QTime=0
+2016-11-14 11:30:33.667 INFO  (qtp1983747920-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479122837219} status=0 QTime=8
+2016-11-14 11:30:33.710 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:35.334 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:37.338 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:39.336 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:41.335 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:43.336 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:45.337 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:46.609 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={q=cms_body:title&indent=on&wt=json&_=1479123033499} hits=0 status=0 QTime=0
+2016-11-14 11:30:47.335 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:49.336 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:51.338 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:53.336 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:55.336 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:57.335 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:30:59.338 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:01.337 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:03.336 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:05.334 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:06.699 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/config params={wt=json&_=1479122052551} status=0 QTime=0
+2016-11-14 11:31:06.700 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1479122052550} status=0 QTime=0
+2016-11-14 11:31:06.704 INFO  (qtp1983747920-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479122052268} status=0 QTime=8
+2016-11-14 11:31:06.712 INFO  (qtp1983747920-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479122052269} status=0 QTime=15
+2016-11-14 11:31:06.875 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1479122052550} status=0 QTime=1
+2016-11-14 11:31:06.952 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/luke params={fl=cms_body&wt=json&_=1479122052550} status=0 QTime=35
+2016-11-14 11:31:07.333 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:09.334 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:11.334 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:13.337 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:15.334 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:17.334 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:17.905 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={q=cms_body:img&indent=on&wt=json&_=1479123033499} hits=2849 status=0 QTime=5
+2016-11-14 11:31:19.334 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:21.338 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:23.336 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:25.338 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:27.334 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:29.335 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:31.335 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:33.338 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:34.553 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={q=cms_body:img&spellcheck.q=imgg&indent=on&spellcheck=on&wt=json&_=1479123033499} hits=2849 status=0 QTime=0
+2016-11-14 11:31:35.334 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:37.334 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:39.336 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:41.334 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:43.333 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:45.338 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:47.333 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:49.334 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:49.508 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={q=cms_body:img&spellcheck.q=imgg&indent=on&spellcheck=on&rows=5&wt=json&_=1479123033499} hits=2849 status=0 QTime=0
+2016-11-14 11:31:51.553 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:53.334 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:55.333 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:57.335 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:31:59.333 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:01.336 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:03.011 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={q=cms_body:img&spellcheck.q=imgg&indent=on&spellcheck=on&rows=5&wt=json&_=1479123033499} hits=2849 status=0 QTime=0
+2016-11-14 11:32:03.333 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:04.268 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={q=cms_body:img&spellcheck.q=imgg&indent=on&spellcheck=on&rows=5&wt=json&_=1479123033499} hits=2849 status=0 QTime=0
+2016-11-14 11:32:05.341 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:06.967 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={q=cms_body:img&spellcheck.q=imgg&indent=on&spellcheck=on&rows=5&wt=json&_=1479123033499} hits=2849 status=0 QTime=0
+2016-11-14 11:32:07.336 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:09.345 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:11.336 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:13.336 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:15.334 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:17.334 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:19.336 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:19.959 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={q=cms_body:img&spellcheck.q=img&indent=on&spellcheck=on&rows=5&wt=json&_=1479123033499} hits=2849 status=0 QTime=0
+2016-11-14 11:32:21.336 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:23.335 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:25.335 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:27.336 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:29.333 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:30.953 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={q=cms_body:img&spellcheck.q=img&indent=on&spellcheck=on&rows=5&wt=json&_=1479123033499} hits=2849 status=0 QTime=0
+2016-11-14 11:32:31.337 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:33.337 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:35.336 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:37.334 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:39.355 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:40.664 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={q=cms_body:img&spellcheck.q=img&indent=on&spellcheck=on&rows=5&facet=on&wt=json&_=1479123033499} hits=2849 status=0 QTime=253
+2016-11-14 11:32:41.347 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:43.335 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:45.338 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:47.335 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:48.516 ERROR (qtp1983747920-15) [   x:namesearch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field _text_
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1300)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:452)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:74)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:206)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:371)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:741)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:529)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:309)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:180)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:101)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:90)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:152)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:140)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:324)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:314)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:309)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:265)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:295)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2089)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:652)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:459)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-11-14 11:32:48.516 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={facet.query=img&q=cms_body:img&spellcheck.q=img&indent=on&spellcheck=on&rows=5&facet=on&wt=json&_=1479123033499} hits=2849 status=400 QTime=2
+2016-11-14 11:32:49.334 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:51.336 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:53.339 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:55.347 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:57.338 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:32:59.355 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:01.335 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:03.337 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:05.349 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:07.340 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:09.335 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:11.154 ERROR (qtp1983747920-17) [   x:namesearch] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field _text_
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1300)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:452)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:74)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:206)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:371)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:741)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:529)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:309)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:180)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:101)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:90)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:152)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:140)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:324)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:314)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:309)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:265)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:295)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:154)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2089)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:652)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:459)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:257)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:208)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-11-14 11:33:11.154 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={facet.query=img&q=cms_body:img&facet.field=cms_body&spellcheck.q=img&indent=on&spellcheck=on&rows=5&facet=on&wt=json&_=1479123033499} hits=2849 status=400 QTime=1
+2016-11-14 11:33:11.335 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:13.337 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:15.343 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:17.335 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:19.335 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:21.334 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:23.339 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:25.339 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:27.345 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:29.333 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:31.339 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:33.334 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:35.335 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:37.334 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:39.335 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:41.334 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:43.335 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:45.333 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:47.339 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:49.333 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:51.334 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:53.334 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:55.336 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:57.337 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:33:59.335 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:01.336 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:03.338 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:05.355 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:07.337 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:09.336 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:11.339 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:13.334 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:15.335 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:17.336 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:19.338 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:21.338 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=3
+2016-11-14 11:34:23.338 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:25.336 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:27.335 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:29.337 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:31.334 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:33.334 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:35.334 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:37.335 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:39.333 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:41.335 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:43.339 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:45.334 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:47.335 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:49.334 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:51.335 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:53.337 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:55.335 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:57.337 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:34:59.333 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:01.337 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:03.338 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:05.335 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:07.333 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:09.337 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:11.335 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:13.334 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:15.338 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:17.342 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:19.335 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:21.336 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:23.346 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:25.337 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:27.336 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:29.342 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:31.336 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:33.337 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:35.340 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:37.360 INFO  (qtp1983747920-19) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:39.335 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:41.338 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:43.337 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:45.335 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:47.334 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:49.334 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:51.334 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:53.334 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:55.338 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:35:57.340 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=2
+2016-11-14 11:35:59.334 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:36:01.336 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:36:03.334 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:36:05.335 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:36:07.339 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:36:09.335 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:36:11.336 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:36:13.341 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:36:15.390 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:36:17.336 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479122042069} status=0 QTime=0
+2016-11-14 11:36:18.321 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@21c29f36{HTTP/1.1,[http/1.1]}{0.0.0.0:8099}
+2016-11-14 11:36:18.321 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1074593562
+2016-11-14 11:36:18.322 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.c.SolrCore [namesearch]  CLOSING SolrCore org.apache.solr.core.SolrCore@122727e8
+2016-11-14 11:36:18.323 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=2,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=11616,cumulative_deletesById=0,cumulative_deletesByQuery=2,cumulative_errors=0,transaction_logs_total_size=17776080,transaction_logs_total_number=1}
+2016-11-14 11:36:18.323 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.u.SolrCoreState Closing SolrCoreState
+2016-11-14 11:36:18.323 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2016-11-14 11:36:18.324 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+2016-11-14 11:36:18.326 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.c.SolrCore [namesearch] Closing main searcher on request.
+2016-11-14 11:36:18.329 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 3 directories currently being tracked
+2016-11-14 11:36:18.330 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory looking to close /var/solr/data/namesearch/data/snapshot_metadata [CachedDir<<refCount=0;path=/var/solr/data/namesearch/data/snapshot_metadata;done=false>>]
+2016-11-14 11:36:18.330 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+2016-11-14 11:36:18.330 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory Closing directory: /var/solr/data/namesearch/data/snapshot_metadata
+2016-11-14 11:36:18.330 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory looking to close /var/solr/data/namesearch/data/index [CachedDir<<refCount=0;path=/var/solr/data/namesearch/data/index;done=false>>]
+2016-11-14 11:36:18.337 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+2016-11-14 11:36:18.337 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory Closing directory: /var/solr/data/namesearch/data/index
+2016-11-14 11:36:18.337 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory looking to close /var/solr/data/namesearch/data [CachedDir<<refCount=0;path=/var/solr/data/namesearch/data;done=false>>]
+2016-11-14 11:36:18.337 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+2016-11-14 11:36:18.337 INFO  (coreCloseExecutor-13-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory Closing directory: /var/solr/data/namesearch/data
+2016-11-14 11:36:18.340 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@5f9d02cb{/solr,null,UNAVAILABLE}{/opt/solr-6.2.1/server/solr-webapp/webapp}
+2016-11-14 11:36:18.341 WARN  (ShutdownMonitor) [   ] o.e.j.s.ServletContextHandler ServletContextHandler.setHandler should not be called directly. Use insertHandler or setSessionHandler etc.

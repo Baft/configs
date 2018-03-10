@@ -19,9 +19,9 @@ $ bin/solr start -Dsolr.autoSoftCommit.maxTime=10000
 #install script do these :
 	#install to /opt/solr by -i option (default id /opt/solr[version number]) 
 	#create symlink in same location (installation parent path "/opt" ) , point to the installation directory ( point to "/opt/solr[version num]") . use this symlink around the app insted of installation dir , to ease upgrading process without changeing pathes
-	#save data & configuration & logs & PID files of instances to /opt/solrData by -d option (default id /var/solr/data) 
+	#save data & configuration & logs & PID files of instances to /opt/solrData by -d option (default is /var/solr/data) 
 	#create instance with name 'SSE' by -s option (default is solr) and listen to port 8099 by -p option (default is 8983)
-	#create "/etc/default/[name of solr instance].in.sh" file for environment variable for instance each instance 
+	#create "/etc/default/[name of solr instance].in.sh" file for environment variable for instance each instance (deafult is /etc/default/solr.in.sh)
 	#create "etc/init.d/[solr instance name]" file to create service in OS . read "/etc/default/[name of solr instance].in.sh" file
 $ sudo tar xzf solr-X.Y.Z.tgz
 $ sudo bin/install_solr_service.sh /home/webersion/Desktop/solr-6.0.0.tgz  -i /opt/solr -d /home/webersion/Desktop/solrData -s SSE -p 8099
@@ -96,7 +96,7 @@ SOLR_JAVA_MEM="-Xms512m -Xmx512m"
 
 ####################################################### solrconfig.xml files
 #for solrdonfig.xml https://cwiki.apache.org/confluence/display/solr/Configuring+solrconfig.xml
-#reside in conf/ directory of each collection ( core(instance) in standalone Solr mode )
+#reside in conf/ directory of each collection ( core(instance) in standalone Solr mode ) . default is /var/solr/data/solrconfig.xml
 
 	#### add plugins . like dataImporter ,. ..
 	#https://wiki.apache.org/solr/SolrPlugins#How_to_Load_Plugins
@@ -108,6 +108,7 @@ SOLR_JAVA_MEM="-Xms512m -Xmx512m"
 
 #if u need to specify alternative shema file , have to change in solrconfig.xml as link below
 #https://cwiki.apache.org/confluence/display/solr/Schema+Factory+Definition+in+SolrConfig
+
 
 ###################################################### maintenance
 #maintenance

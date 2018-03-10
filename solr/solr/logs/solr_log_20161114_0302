@@ -1,0 +1,431 @@
+2016-11-14 10:46:52.218 INFO  (main) [   ] o.e.j.u.log Logging initialized @519ms
+2016-11-14 10:46:52.634 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2016-11-14 10:46:52.652 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///opt/solr-6.2.1/server/contexts/] at interval 0
+2016-11-14 10:46:53.138 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-11-14 10:46:53.147 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@5f9d02cb{/solr,file:///opt/solr-6.2.1/server/solr-webapp/webapp/,STARTING}{/opt/solr-6.2.1/server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-11-14 10:46:53.158 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=1335298403@4f970963
+2016-11-14 10:46:53.172 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-11-14 10:46:53.172 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /var/solr/data
+2016-11-14 10:46:53.174 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/var/solr/data'
+2016-11-14 10:46:53.174 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-11-14 10:46:53.174 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /var/solr/data
+2016-11-14 10:46:53.177 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /var/solr/data/solr.xml
+2016-11-14 10:46:53.253 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /var/solr/data
+2016-11-14 10:46:53.278 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1074593562
+2016-11-14 10:46:53.278 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/var/solr/data]
+2016-11-14 10:46:53.279 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/var/solr/data/lib/dataimporthandler-extras/' to classloader
+2016-11-14 10:46:53.279 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/var/solr/data/lib/dataimporthandler/' to classloader
+2016-11-14 10:46:53.480 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,connectionsEvictorSleepDelay : 5000,maxConnectionIdleTime : 40000,
+2016-11-14 10:46:53.816 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-11-14 10:46:53.823 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-11-14 10:46:53.823 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-11-14 10:46:53.825 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-11-14 10:46:53.826 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-11-14 10:46:54.039 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /var/solr/data
+2016-11-14 10:46:54.046 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=namesearch, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data}
+2016-11-14 10:46:54.047 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core namesearch in /var/solr/data/namesearch
+2016-11-14 10:46:54.047 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions
+2016-11-14 10:46:54.056 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/var/solr/data/namesearch'
+2016-11-14 10:46:54.056 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-11-14 10:46:54.056 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /var/solr/data
+2016-11-14 10:46:54.057 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/var/solr/data/namesearch/lib/hsqldb-1.8.0.10.jar' to classloader
+2016-11-14 10:46:54.057 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/var/solr/data/namesearch/lib/derby-10.9.1.0.jar' to classloader
+2016-11-14 10:46:54.062 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/opt/solr-6.2.1/server
+2016-11-14 10:46:54.062 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-11-14 10:46:54.126 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@5f9d02cb{/solr,file:///opt/solr-6.2.1/server/solr-webapp/webapp/,AVAILABLE}{/opt/solr-6.2.1/server/solr-webapp/webapp}
+2016-11-14 10:46:54.177 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@50f7bc9d{HTTP/1.1,[http/1.1]}{0.0.0.0:8099}
+2016-11-14 10:46:54.177 INFO  (main) [   ] o.e.j.s.Server Started @2480ms
+2016-11-14 10:46:54.202 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-11-14 10:46:54.204 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/poi-ooxml-schemas-3.15-beta1.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/fontbox-2.0.1.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tika-xmp-1.13.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/poi-ooxml-3.15-beta1.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tika-parsers-1.13.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tika-core-1.13.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/jackcess-2.1.3.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/poi-3.15-beta1.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/pdfbox-2.0.1.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/metadata-extractor-2.8.1.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/jempbox-1.8.12.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-11-14 10:46:54.206 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/isoparser-1.1.18.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/vorbis-java-tika-0.8.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/pdfbox-tools-2.0.1.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/vorbis-java-core-0.8.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/icu4j-56.1.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/commons-compress-1.11.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/poi-scratchpad-3.15-beta1.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tika-java7-1.13.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-cell-6.2.1.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/carrot2-mini-3.12.0.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/attributes-binder-1.3.1.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-clustering-6.2.1.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-langid-6.2.1.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-velocity-6.2.1.jar' to classloader
+2016-11-14 10:46:54.207 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/dataimporthandler/lib/mysql-connector-java-5.1.39-bin.jar' to classloader
+2016-11-14 10:46:54.208 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-dataimporthandler-6.2.1.jar' to classloader
+2016-11-14 10:46:54.208 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-dataimporthandler-extras-6.2.1.jar' to classloader
+2016-11-14 10:46:54.267 INFO  (qtp1983747920-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479120280343&since=0} status=0 QTime=22
+2016-11-14 10:46:54.275 INFO  (qtp1983747920-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479120087575&since=0} status=0 QTime=27
+2016-11-14 10:46:54.325 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.0.0
+2016-11-14 10:46:54.459 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-11-14 10:46:54.519 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [namesearch] Schema name=example-DIH-db
+2016-11-14 10:46:54.876 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-11-14 10:46:55.005 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-11-14 10:46:55.007 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-11-14 10:46:55.024 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/var/solr/data/namesearch'
+2016-11-14 10:46:55.024 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'namesearch' using configuration from instancedir /var/solr/data/namesearch
+2016-11-14 10:46:55.025 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-11-14 10:46:55.037 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrCore [[namesearch] ] Opening new SolrCore at [/var/solr/data/namesearch], dataDir=[/var/solr/data/namesearch/data/]
+2016-11-14 10:46:55.039 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-11-14 10:46:55.045 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrCore [[namesearch] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-11-14 10:46:55.047 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrCore [[namesearch] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-11-14 10:46:55.062 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory return new directory for /var/solr/data/namesearch/data/snapshot_metadata
+2016-11-14 10:46:55.065 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.s.SolrSnapshotMetaDataManager Loading from snapshot metadata file...
+2016-11-14 10:46:55.068 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-11-14 10:46:55.069 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory return new directory for /var/solr/data/namesearch/data
+2016-11-14 10:46:55.069 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrCore New index directory detected: old=null new=/var/solr/data/namesearch/data/index/
+2016-11-14 10:46:55.070 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory return new directory for /var/solr/data/namesearch/data/index
+2016-11-14 10:46:55.105 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-11-14 10:46:55.109 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-11-14 10:46:55.111 INFO  (OldIndexDirectoryCleanupThreadForCore-namesearch) [   x:namesearch] o.a.s.c.SolrCore Looking for old index directories to cleanup for core namesearch in /var/solr/data/namesearch/data/
+2016-11-14 10:46:55.191 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-11-14 10:46:55.230 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-11-14 10:46:55.246 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-11-14 10:46:55.248 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-11-14 10:46:55.249 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-11-14 10:46:55.263 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-11-14 10:46:55.328 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-11-14 10:46:55.330 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-11-14 10:46:55.330 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-11-14 10:46:55.339 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-11-14 10:46:55.340 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-11-14 10:46:55.340 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-11-14 10:46:55.340 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-11-14 10:46:55.341 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/sql,/graph,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/stream,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/terms,/debug/dump,/dataimport,/update/extract
+2016-11-14 10:46:55.341 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-11-14 10:46:55.349 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-11-14 10:46:55.349 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-11-14 10:46:55.398 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-11-14 10:46:55.399 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-11-14 10:46:55.444 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/var/solr/data/namesearch/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@247f5234; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_u,generation=30}
+2016-11-14 10:46:55.444 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.SolrDeletionPolicy newest commit generation = 30
+2016-11-14 10:46:55.489 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@459b0333[namesearch] main]
+2016-11-14 10:46:55.494 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/namesearch/conf
+2016-11-14 10:46:55.494 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/var/solr/data/namesearch/conf}
+2016-11-14 10:46:55.502 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/var/solr/data/namesearch/conf
+2016-11-14 10:46:55.503 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-11-14 10:46:55.508 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-11-14 10:46:55.512 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-11-14 10:46:55.512 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-11-14 10:46:55.514 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from data dir: elevate.xml
+2016-11-14 10:46:55.535 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-11-14 10:46:55.547 INFO  (searcherExecutor-7-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@459b0333[namesearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_n(6.2.1):C8298)))}
+2016-11-14 10:46:55.547 INFO  (searcherExecutor-7-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-11-14 10:46:55.547 INFO  (searcherExecutor-7-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-11-14 10:46:55.547 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-11-14 10:46:55.548 INFO  (searcherExecutor-7-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.SolrCore [namesearch] Registered new searcher Searcher@459b0333[namesearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_n(6.2.1):C8298)))}
+2016-11-14 10:46:55.548 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-11-14 10:46:55.586 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.VersionInfo Found MAX value 1550359444283457548 from Terms for _version_ in index
+2016-11-14 10:46:55.595 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.u.UpdateLog Took 47.0ms to seed version buckets with highest version 1550359444283457548
+2016-11-14 10:46:55.596 INFO  (coreLoadExecutor-6-thread-1) [   x:namesearch] o.a.s.c.CoreContainer registering core: namesearch
+2016-11-14 10:47:00.427 INFO  (qtp1983747920-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479120280343&since=0} status=0 QTime=0
+2016-11-14 10:47:00.841 INFO  (qtp1983747920-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479120087575&since=0} status=0 QTime=0
+2016-11-14 10:47:10.429 INFO  (qtp1983747920-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479120280343&since=0} status=0 QTime=0
+2016-11-14 10:47:10.842 INFO  (qtp1983747920-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479120087575&since=0} status=0 QTime=0
+2016-11-14 10:47:12.779 INFO  (qtp1983747920-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479120432540} status=0 QTime=1
+2016-11-14 10:47:12.790 INFO  (qtp1983747920-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479120432764&since=0} status=0 QTime=0
+2016-11-14 10:47:12.961 INFO  (qtp1983747920-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479120432540} status=0 QTime=182
+2016-11-14 10:47:18.710 INFO  (qtp1983747920-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479120432540} status=0 QTime=0
+2016-11-14 10:47:18.760 INFO  (qtp1983747920-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479120432540} status=0 QTime=39
+2016-11-14 10:47:18.769 INFO  (qtp1983747920-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1479120432540} status=0 QTime=14
+2016-11-14 10:47:18.952 INFO  (qtp1983747920-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479120432540} status=0 QTime=0
+2016-11-14 10:47:18.960 INFO  (qtp1983747920-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479120432540} status=0 QTime=4
+2016-11-14 10:47:18.965 INFO  (qtp1983747920-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1479120432540} status=0 QTime=9
+2016-11-14 10:47:19.938 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/var/solr/data/namesearch'
+2016-11-14 10:47:19.939 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-11-14 10:47:19.939 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /var/solr/data
+2016-11-14 10:47:19.939 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/var/solr/data/namesearch/lib/hsqldb-1.8.0.10.jar' to classloader
+2016-11-14 10:47:19.939 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/var/solr/data/namesearch/lib/derby-10.9.1.0.jar' to classloader
+2016-11-14 10:47:19.980 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-11-14 10:47:19.982 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-11-14 10:47:19.988 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/poi-ooxml-schemas-3.15-beta1.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/fontbox-2.0.1.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tika-xmp-1.13.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/poi-ooxml-3.15-beta1.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tika-parsers-1.13.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tika-core-1.13.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/jackcess-2.1.3.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/poi-3.15-beta1.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/pdfbox-2.0.1.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/metadata-extractor-2.8.1.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/jempbox-1.8.12.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/isoparser-1.1.18.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/vorbis-java-tika-0.8.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/pdfbox-tools-2.0.1.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/vorbis-java-core-0.8.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/icu4j-56.1.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/commons-compress-1.11.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/poi-scratchpad-3.15-beta1.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/extraction/lib/tika-java7-1.13.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-cell-6.2.1.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-11-14 10:47:19.989 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/carrot2-mini-3.12.0.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/clustering/lib/attributes-binder-1.3.1.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-clustering-6.2.1.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-langid-6.2.1.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-velocity-6.2.1.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/contrib/dataimporthandler/lib/mysql-connector-java-5.1.39-bin.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-dataimporthandler-6.2.1.jar' to classloader
+2016-11-14 10:47:19.990 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/opt/solr/dist/solr-dataimporthandler-extras-6.2.1.jar' to classloader
+2016-11-14 10:47:20.062 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.0.0
+2016-11-14 10:47:20.151 INFO  (qtp1983747920-13) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-11-14 10:47:20.161 INFO  (qtp1983747920-13) [   ] o.a.s.s.IndexSchema [namesearch] Schema name=example-DIH-db
+2016-11-14 10:47:20.325 INFO  (qtp1983747920-13) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-11-14 10:47:20.357 INFO  (qtp1983747920-13) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-11-14 10:47:20.362 INFO  (qtp1983747920-13) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-11-14 10:47:20.387 INFO  (qtp1983747920-13) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/var/solr/data/namesearch'
+2016-11-14 10:47:20.387 INFO  (qtp1983747920-13) [   ] o.a.s.c.CoreContainer Reloading SolrCore 'namesearch' using configuration from instancedir /var/solr/data/namesearch
+2016-11-14 10:47:20.387 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.SolrCore [[namesearch] ] Opening new SolrCore at [/var/solr/data/namesearch], dataDir=[/var/solr/data/namesearch/data/]
+2016-11-14 10:47:20.387 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-11-14 10:47:20.387 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.SolrCore [[namesearch] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-11-14 10:47:20.388 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.SolrCore [[namesearch] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-11-14 10:47:20.388 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.s.SolrSnapshotMetaDataManager Loading from snapshot metadata file...
+2016-11-14 10:47:20.388 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-11-14 10:47:20.388 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.SolrCore New index directory detected: old=null new=/var/solr/data/namesearch/data/index/
+2016-11-14 10:47:20.391 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-11-14 10:47:20.392 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-11-14 10:47:20.394 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-11-14 10:47:20.391 INFO  (OldIndexDirectoryCleanupThreadForCore-namesearch) [   x:namesearch] o.a.s.c.SolrCore Looking for old index directories to cleanup for core namesearch in /var/solr/data/namesearch/data/
+2016-11-14 10:47:20.401 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-11-14 10:47:20.404 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-11-14 10:47:20.405 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-11-14 10:47:20.406 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-11-14 10:47:20.407 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-11-14 10:47:20.410 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-11-14 10:47:20.418 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-11-14 10:47:20.418 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-11-14 10:47:20.418 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-11-14 10:47:20.424 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-11-14 10:47:20.424 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-11-14 10:47:20.424 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-11-14 10:47:20.424 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/sql,/graph,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/stream,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/terms,/debug/dump,/dataimport,/update/extract
+2016-11-14 10:47:20.424 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-11-14 10:47:20.424 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-11-14 10:47:20.424 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-11-14 10:47:20.426 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@47d97595[namesearch] main]
+2016-11-14 10:47:20.426 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/namesearch/conf
+2016-11-14 10:47:20.426 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/var/solr/data/namesearch/conf}
+2016-11-14 10:47:20.426 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/var/solr/data/namesearch/conf
+2016-11-14 10:47:20.426 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-11-14 10:47:20.426 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-11-14 10:47:20.426 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-11-14 10:47:20.426 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-11-14 10:47:20.427 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from data dir: elevate.xml
+2016-11-14 10:47:20.437 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-11-14 10:47:20.441 INFO  (searcherExecutor-12-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@47d97595[namesearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_n(6.2.1):C8298)))}
+2016-11-14 10:47:20.441 INFO  (searcherExecutor-12-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-11-14 10:47:20.441 INFO  (searcherExecutor-12-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-11-14 10:47:20.441 INFO  (searcherExecutor-12-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.SolrCore [namesearch] Registered new searcher Searcher@47d97595[namesearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_n(6.2.1):C8298)))}
+2016-11-14 10:47:20.443 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-11-14 10:47:20.445 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-11-14 10:47:20.448 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.u.VersionInfo Found MAX value 1550359444283457548 from Terms for _version_ in index
+2016-11-14 10:47:20.450 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.u.UpdateLog Took 6.0ms to seed version buckets with highest version 1550359444283457548
+2016-11-14 10:47:20.450 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.u.DefaultSolrCoreState Closing old IndexWriter... core=namesearch
+2016-11-14 10:47:20.463 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/var/solr/data/namesearch/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@247f5234; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_u,generation=30}
+2016-11-14 10:47:20.463 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.SolrDeletionPolicy newest commit generation = 30
+2016-11-14 10:47:20.464 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2016-11-14 10:47:20.465 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@54e317f[namesearch] main]
+2016-11-14 10:47:20.467 INFO  (searcherExecutor-12-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@54e317f[namesearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_n(6.2.1):C8298)))}
+2016-11-14 10:47:20.467 INFO  (searcherExecutor-12-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-11-14 10:47:20.467 INFO  (searcherExecutor-12-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.SolrCore [namesearch] Registered new searcher Searcher@54e317f[namesearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_n(6.2.1):C8298)))}
+2016-11-14 10:47:20.468 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.CoreContainer replacing core: namesearch
+2016-11-14 10:47:20.468 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.SolrCore [namesearch]  CLOSING SolrCore org.apache.solr.core.SolrCore@70ca0107
+2016-11-14 10:47:20.470 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=817547,transaction_logs_total_number=1}
+2016-11-14 10:47:20.477 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.SolrCore [namesearch] Closing main searcher on request.
+2016-11-14 10:47:20.489 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=namesearch&action=RELOAD&wt=json&_=1479120432540} status=0 QTime=550
+2016-11-14 10:47:20.866 INFO  (qtp1983747920-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479120087575&since=0} status=0 QTime=0
+2016-11-14 10:47:21.583 INFO  (qtp1983747920-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479120432540} status=0 QTime=0
+2016-11-14 10:47:21.593 INFO  (qtp1983747920-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1479120432540} status=0 QTime=1
+2016-11-14 10:47:21.606 INFO  (qtp1983747920-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479120432540} status=0 QTime=19
+2016-11-14 10:47:22.741 INFO  (qtp1983747920-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479120432540} status=0 QTime=0
+2016-11-14 10:47:22.765 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1479120442722} status=0 QTime=2
+2016-11-14 10:47:22.765 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/replication params={wt=json&command=details&_=1479120442722} status=0 QTime=0
+2016-11-14 10:47:22.778 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1479120432541&ts=1479120432541} status=503 QTime=1
+2016-11-14 10:47:22.797 INFO  (qtp1983747920-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479120432540} status=0 QTime=36
+2016-11-14 10:47:22.799 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/system params={wt=json&_=1479120442722} status=0 QTime=28
+2016-11-14 10:47:24.673 INFO  (qtp1983747920-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479120432540} status=0 QTime=0
+2016-11-14 10:47:24.688 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1479120444611} status=0 QTime=2
+2016-11-14 10:47:24.699 INFO  (qtp1983747920-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479120432540} status=0 QTime=15
+2016-11-14 10:47:24.885 INFO  (qtp1983747920-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479120432540} status=0 QTime=0
+2016-11-14 10:47:24.893 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1479120444611} status=0 QTime=0
+2016-11-14 10:47:24.900 INFO  (qtp1983747920-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479120432540} status=0 QTime=9
+2016-11-14 10:47:24.924 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1479120444612} status=0 QTime=18
+2016-11-14 10:47:25.002 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479120444612} status=0 QTime=0
+2016-11-14 10:47:27.777 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.h.d.DataImporter Loading DIH Configuration: /var/solr/data/namesearch/dataConfig.xml
+2016-11-14 10:47:27.788 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-11-14 10:47:27.789 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2016-11-14 10:47:27.789 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2016-11-14 10:47:27.812 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={core=namesearch&optimize=true&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1479120444612&verbose=false} status=0 QTime=35
+2016-11-14 10:47:27.814 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.DataImporter Starting Full Import
+2016-11-14 10:47:27.816 INFO  (qtp1983747920-17) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479120444612} status=0 QTime=0
+2016-11-14 10:47:27.838 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-11-14 10:47:27.966 INFO  (Thread-14) [   x:namesearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@2cf7c823[namesearch] realtime]
+2016-11-14 10:47:27.998 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.JdbcDataSource Creating a connection for entity titles with URL: jdbc:mysql://192.168.245.1/miras?useUnicode=true&characterEncoding=UTF-8
+2016-11-14 10:47:28.408 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 410
+2016-11-14 10:47:28.514 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.JdbcDataSource Creating a connection for entity docs with URL: jdbc:mysql://192.168.245.1/miras?useUnicode=true&characterEncoding=UTF-8
+2016-11-14 10:47:28.521 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 4
+2016-11-14 10:47:30.869 INFO  (qtp1983747920-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479120087575&since=0} status=0 QTime=0
+2016-11-14 10:47:31.997 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479120444612} status=0 QTime=0
+2016-11-14 10:47:33.206 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.JdbcDataSource Creating a connection for entity brboss with URL: jdbc:mysql://192.168.245.1/insp_v2?useUnicode=true&characterEncoding=UTF-8
+2016-11-14 10:47:33.244 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 37
+2016-11-14 10:47:33.397 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479120444612} status=0 QTime=0
+2016-11-14 10:47:33.511 WARN  (Thread-14) [   x:namesearch] o.a.s.h.d.SolrWriter Error creating document : SolrInputDocument(fields: [name=حسن, id=3697, family=فرج نيا, brcode=, _version_=1550970208659701784])
+org.apache.solr.common.SolrException: ERROR: [doc=3697] Error adding field 'brcode'='' msg=For input string: ""
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:177)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:82)
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:277)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:211)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:166)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:67)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:939)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:1094)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:720)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.handler.dataimport.SolrWriter.upload(SolrWriter.java:74)
+	at org.apache.solr.handler.dataimport.DataImportHandler$1.upload(DataImportHandler.java:254)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:524)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:414)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:329)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:232)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:416)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:475)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:458)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.apache.solr.schema.TrieField.createField(TrieField.java:702)
+	at org.apache.solr.schema.TrieField.createFields(TrieField.java:763)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:47)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:122)
+	... 20 more
+2016-11-14 10:47:33.657 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.DocBuilder Import completed successfully
+2016-11-14 10:47:33.657 INFO  (Thread-14) [   x:namesearch] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=true,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-11-14 10:47:33.657 WARN  (Thread-14) [   x:namesearch] o.a.s.u.DirectUpdateHandler2 Starting optimize... Reading and rewriting the entire index! Use with care.
+2016-11-14 10:47:34.450 INFO  (Thread-14) [   x:namesearch] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@5ab1540a
+2016-11-14 10:47:34.501 INFO  (Thread-14) [   x:namesearch] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/var/solr/data/namesearch/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@247f5234; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_u,generation=30}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/var/solr/data/namesearch/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@247f5234; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_v,generation=31}
+2016-11-14 10:47:34.501 INFO  (Thread-14) [   x:namesearch] o.a.s.c.SolrDeletionPolicy newest commit generation = 31
+2016-11-14 10:47:34.504 INFO  (Thread-14) [   x:namesearch] o.a.s.s.SolrIndexSearcher Opening [Searcher@77f16a9[namesearch] main]
+2016-11-14 10:47:34.505 INFO  (searcherExecutor-12-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@77f16a9[namesearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_p(6.2.1):c8298)))}
+2016-11-14 10:47:34.505 INFO  (searcherExecutor-12-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-11-14 10:47:34.506 INFO  (searcherExecutor-12-thread-1-processing-x:namesearch) [   x:namesearch] o.a.s.c.SolrCore [namesearch] Registered new searcher Searcher@77f16a9[namesearch] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_p(6.2.1):c8298)))}
+2016-11-14 10:47:34.512 INFO  (Thread-14) [   x:namesearch] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-11-14 10:47:34.513 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2016-11-14 10:47:34.514 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2016-11-14 10:47:34.514 INFO  (Thread-14) [   x:namesearch] o.a.s.h.d.DocBuilder Time taken = 0:0:6.675
+2016-11-14 10:47:34.514 INFO  (Thread-14) [   x:namesearch] o.a.s.u.p.LogUpdateProcessorFactory [namesearch]  webapp=/solr path=/dataimport params={core=namesearch&optimize=true&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1479120444612&verbose=false} status=0 QTime=35{deleteByQuery=*:* (-1550970202760413184),add=[6 (1550970203441987584), 7 (1550970203464007680), 10 (1550970203466104832), 11 (1550970203470299136), 13 (1550970203471347712), 19 (1550970203473444864), 20 (1550970203474493440), 21 (1550970203480784896), 22 (1550970203496513536), 24 (1550970203499659264), ... (11615 adds)],optimize=} 0 6737
+2016-11-14 10:47:34.547 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479120444612} status=0 QTime=0
+2016-11-14 10:47:35.812 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1479120444612} status=0 QTime=0
+2016-11-14 10:47:40.879 INFO  (qtp1983747920-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1479120087575&since=0} status=0 QTime=1
+2016-11-14 10:47:41.240 INFO  (qtp1983747920-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479120432540} status=0 QTime=0
+2016-11-14 10:47:41.253 INFO  (qtp1983747920-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479120432540} status=0 QTime=10
+2016-11-14 10:47:50.535 INFO  (qtp1983747920-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479120470721} status=0 QTime=0
+2016-11-14 10:47:50.542 INFO  (qtp1983747920-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479120470722} status=0 QTime=7
+2016-11-14 10:47:50.656 INFO  (qtp1983747920-16) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={q={!term+f%3Dcms_body}div&indent=on&wt=json&_=1479120470880} hits=0 status=0 QTime=119
+2016-11-14 10:48:00.171 INFO  (qtp1983747920-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479120480319} status=0 QTime=0
+2016-11-14 10:48:00.181 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/select params={q={!term+f%3Dbrcode}-100&indent=on&wt=json&_=1479120480513} hits=7011 status=0 QTime=8
+2016-11-14 10:48:00.188 INFO  (qtp1983747920-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479120480320} status=0 QTime=16
+2016-11-14 10:48:09.052 INFO  (qtp1983747920-11) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1479120489205} status=0 QTime=0
+2016-11-14 10:48:09.087 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1479120489418} status=0 QTime=32
+2016-11-14 10:48:09.158 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/config params={wt=json&_=1479120489419} status=0 QTime=103
+2016-11-14 10:48:09.163 INFO  (qtp1983747920-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1479120489206} status=0 QTime=110
+2016-11-14 10:48:09.369 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1479120489418} status=0 QTime=1
+2016-11-14 10:48:11.040 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/admin/luke params={fl=name_family_spellcheck&wt=json&_=1479120489418} status=0 QTime=5
+2016-11-14 10:48:16.806 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /spell,class = solr.SearchHandler,args = {defaults={spellcheck.dictionary=default,spellcheck=on,spellcheck.extendedResults=true,spellcheck.count=10,spellcheck.alternativeTermCount=5,spellcheck.maxResultsForSuggest=5,spellcheck.collate=true,spellcheck.collateExtendedResults=true,spellcheck.maxCollationTries=10,spellcheck.maxCollations=5,df=_text_},last-components=[spellcheck]}} 
+2016-11-14 10:48:16.816 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=*:*&spellcheck.q=delll+ultrashar&spellcheck=true&wt=json&spellcheck.build=true} hits=8298 status=0 QTime=9
+2016-11-14 10:48:26.675 INFO  (qtp1983747920-15) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q={!term+f%3Dbrcode}-100&indent=on&wt=json&_=1479120480513} hits=7011 status=0 QTime=1
+2016-11-14 10:49:04.435 INFO  (qtp1983747920-20) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q="family":"اميدي+نژاد"&defType=edismax&indent=on&wt=json&_=1479120480513} hits=0 status=0 QTime=146
+2016-11-14 10:49:14.225 INFO  (qtp1983747920-14) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدي+نژاد"&defType=edismax&indent=on&wt=json&_=1479120480513} hits=1 status=0 QTime=288
+2016-11-14 10:49:17.946 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدي+نژاد"&indent=on&wt=json&_=1479120480513} hits=1 status=0 QTime=2
+2016-11-14 10:49:40.569 INFO  (qtp1983747920-13) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدئ+نژاد"&indent=on&wt=json&_=1479120480513} hits=0 status=0 QTime=1
+2016-11-14 10:50:58.268 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدي+نژاد"&indent=on&wt=json&_=1479120480513} hits=1 status=0 QTime=0
+2016-11-14 10:51:07.982 INFO  (qtp1983747920-11) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدي+نژاد"&defType=edismax&indent=on&qf=name_family_spellcheck&wt=json&_=1479120480513} hits=1 status=0 QTime=1
+2016-11-14 10:51:46.791 INFO  (qtp1983747920-18) [   x:namesearch] o.a.s.c.S.Request [namesearch]  webapp=/solr path=/spell params={q=family:"اميدي+نژاد"&defType=edismax&spellcheck.q=یث&indent=on&qf=name_family_spellcheck&spellcheck=on&wt=json&_=1479120480513} hits=1 status=0 QTime=1
+2016-11-14 11:02:39.855 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@50f7bc9d{HTTP/1.1,[http/1.1]}{0.0.0.0:8099}
+2016-11-14 11:02:39.858 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1074593562
+2016-11-14 11:02:39.859 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.c.SolrCore [namesearch]  CLOSING SolrCore org.apache.solr.core.SolrCore@3614540d
+2016-11-14 11:02:39.860 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=1,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=1,cumulative_adds=11616,cumulative_deletesById=0,cumulative_deletesByQuery=1,cumulative_errors=1,transaction_logs_total_size=18593560,transaction_logs_total_number=1}
+2016-11-14 11:02:39.860 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.u.SolrCoreState Closing SolrCoreState
+2016-11-14 11:02:39.860 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2016-11-14 11:02:39.860 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+2016-11-14 11:02:39.869 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.c.SolrCore [namesearch] Closing main searcher on request.
+2016-11-14 11:02:39.875 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 3 directories currently being tracked
+2016-11-14 11:02:39.875 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory looking to close /var/solr/data/namesearch/data [CachedDir<<refCount=0;path=/var/solr/data/namesearch/data;done=false>>]
+2016-11-14 11:02:39.875 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+2016-11-14 11:02:39.876 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory Closing directory: /var/solr/data/namesearch/data
+2016-11-14 11:02:39.876 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory looking to close /var/solr/data/namesearch/data/snapshot_metadata [CachedDir<<refCount=0;path=/var/solr/data/namesearch/data/snapshot_metadata;done=false>>]
+2016-11-14 11:02:39.882 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+2016-11-14 11:02:39.882 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory Closing directory: /var/solr/data/namesearch/data/snapshot_metadata
+2016-11-14 11:02:39.882 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory looking to close /var/solr/data/namesearch/data/index [CachedDir<<refCount=0;path=/var/solr/data/namesearch/data/index;done=false>>]
+2016-11-14 11:02:39.882 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory Closing directory, CoreContainer#isShutdown=true
+2016-11-14 11:02:39.882 INFO  (coreCloseExecutor-16-thread-1) [   x:namesearch] o.a.s.c.CachingDirectoryFactory Closing directory: /var/solr/data/namesearch/data/index
+2016-11-14 11:02:39.884 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@5f9d02cb{/solr,null,UNAVAILABLE}{/opt/solr-6.2.1/server/solr-webapp/webapp}
+2016-11-14 11:02:39.887 WARN  (ShutdownMonitor) [   ] o.e.j.s.ServletContextHandler ServletContextHandler.setHandler should not be called directly. Use insertHandler or setSessionHandler etc.

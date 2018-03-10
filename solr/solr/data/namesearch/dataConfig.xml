@@ -1,0 +1,33 @@
+
+<dataConfig>
+
+ <dataSource type="JdbcDataSource" name="miras" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://192.168.245.1/miras?useUnicode=true&amp;characterEncoding=UTF-8" user="remote-users" password="root" encoding="UTF-8" useUnicode="true" characterEncoding="UTF-8"/>
+
+<dataSource type="JdbcDataSource" name="inspv2" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://192.168.245.1/insp_v2?useUnicode=true&amp;characterEncoding=UTF-8" user="remote-users" password="root" encoding="UTF-8" useUnicode="true" characterEncoding="UTF-8"/>
+
+  <document>
+
+
+    <entity name="titles" dataSource="miras" query="select nid as id , vid,title from miras.node">
+
+      <field column="title" name="cms_title" />
+
+      <entity name="docs" dataSource="miras" query="select body_value from miras.field_data_body where entity_id='${titles.vid}'">
+
+        <field column="body_value" name="cms_body" />
+
+   
+      </entity>
+    </entity>
+
+    <entity name="brboss" dataSource="inspv2" query="select id , name , family , brcode from insp_v2.temp_authn_brboss">
+
+      <field column="name" name="name" />
+      <field column="family" name="family" />
+      <field column="brcode" name="brcode" />
+ 
+    </entity>
+
+  </document>
+
+</dataConfig>
