@@ -1,0 +1,4 @@
+A better alternative is to use checkinstall instead of make install
+https://help.ubuntu.com/community/CheckInstall
+
+enabling Ubuntu to track the installation. Later you can revert any changes made using the regular Ubuntu package management.
